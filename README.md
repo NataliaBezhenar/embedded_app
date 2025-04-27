@@ -24,7 +24,7 @@ npm -v
 
 ---
 
-🛠 Setup Instructions
+## 🛠 Setup Instructions
 
 1. Clone the repository
    git clone your-repo-url.git
@@ -38,7 +38,7 @@ This installs:
 - Backend: express, ws, cors
 - Dev Tools: typescript, tsx, concurrently
 
-🚀 How to Run
+## 🚀 How to Run
 
 1. Development Mode (Recommended)
    npm run dev-all
@@ -47,11 +47,15 @@ This installs:
 - Backend WebSocket server running on: ws://localhost:3001
 
 2. Production Mode (Optional)
-   Build server:
+
+   #### Build server:
+
    npm run build-server
 
-Start compiled server:
-npm run start-server
+   #### Start compiled server:
 
-Start frontend:
-npm run dev
+   npm run start-server
+
+   #### Start frontend:
+
+   npm run dev
