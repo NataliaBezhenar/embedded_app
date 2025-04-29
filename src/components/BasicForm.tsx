@@ -85,38 +85,51 @@ export const BasicForm: React.FC = () => {
         {() => (
           <Form>
             <FieldWrapper>
-              <StyledLabel>Name</StyledLabel>
-              <StyledField name="name" placeholder="Enter name" />
+              <StyledLabel htmlFor="name" data-testid="field-name">
+                Name
+              </StyledLabel>
+              <StyledField id="name" name="name" placeholder="Enter name" />
               <ErrorMessage name="name" component={ErrorText} />
             </FieldWrapper>
 
             <FieldWrapper>
-              <StyledLabel>Surname</StyledLabel>
-              <StyledField name="surname" placeholder="Enter surname" />
+              <StyledLabel htmlFor="surname">Surname</StyledLabel>
+              <StyledField
+                id="surname"
+                name="surname"
+                placeholder="Enter surname"
+                data-testid="field-surname"
+              />
               <ErrorMessage name="surname" component={ErrorText} />
             </FieldWrapper>
 
             <FieldWrapper>
-              <StyledLabel>Income</StyledLabel>
+              <StyledLabel htmlFor="income">Income</StyledLabel>
               <StyledField
+                id="income"
                 name="income"
                 type="number"
                 placeholder="Enter income"
+                data-testid="field-income"
               />
               <ErrorMessage name="income" component={ErrorText} />
             </FieldWrapper>
 
             <FieldWrapper>
-              <StyledLabel>Outcome</StyledLabel>
+              <StyledLabel htmlFor="outcome">Outcome</StyledLabel>
               <StyledField
+                id="outcome"
                 name="outcome"
                 type="number"
                 placeholder="Enter outcome"
+                data-testid="field-outcome"
               />
               <ErrorMessage name="outcome" component={ErrorText} />
             </FieldWrapper>
 
-            <SubmitButton type="submit">Send</SubmitButton>
+            <SubmitButton type="submit" data-testid="submit-button">
+              Send
+            </SubmitButton>
           </Form>
         )}
       </Formik>
